@@ -13,7 +13,7 @@ If you don´t want to create a package, you can do a manual installation.
 You need SSH access to NAS. New version of Dlink firmware has SSH access, but if you have an old version, you can install SSH package. You can find at http://dlink.vtverdohleb.org.ua/Add-On/
 
 1. Connect to Nas using ssh
-2. Copy this Syncovery folder to /tmp
+2. Copy these files to a folder to /tmp/Syncovery
 3. Go to /tmp/Syncovery
 4. Run ./install.sh
 5. Synconvery Program will be installed on /mnt/HD/HD_a2/Nas_Prog/Syncovery
