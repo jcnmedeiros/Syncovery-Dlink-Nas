@@ -1,0 +1,19 @@
+Package:		Syncovery
+Version:		7.84
+Packager:		D-Link
+Email:			jcnascimento@gmail.com
+Homepage:		https://github.com/jcnmedeiros
+AddonShowName:	Syncovery
+Description:	Syncovery is a file sync and backup tool with support for local and cloud storage.
+AddonIndexPage:	index.html
+AddonUsedPort:	8999
+InstDepend:
+InstConflict:
+StartDepend:
+StartConflict:
+Category:		Backup/Sync
+DescriptionOnline:	Back up your data and synchronize PCs, Macs, servers, notebooks, and online storage space.
+Developer:		jcnmedeiros
+Website:		https://www.syncovery.com/
+Forum:          http://www.backupcreations.com/forum/
+Screenshot:     Syncovery_display.png
