@@ -15,4 +15,3 @@ path=$(dirname $0)
 # remove link for web folder
 
 rm -r /var/www/Syncovery
-

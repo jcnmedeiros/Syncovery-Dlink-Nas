@@ -14,4 +14,3 @@ path_des=$1
 
 # link for images
 [ ! -d /var/www/Syncovery ] && ln -sf ${path_des}/web /var/www/Syncovery
-

@@ -58,10 +58,6 @@ ${SYNCOVERY_BIN} SET /INI=${SYNCOVERY_HOME}/Syncovery.cfg /DatabasePath=${SYNCOV
 ${SYNCOVERY_BIN} SET /INI=${SYNCOVERY_HOME}/Syncovery.cfg /WEBSERVER=localhost /WEBPORT=8999
 # Username/Password = default / pass
 
-# Clean unused files
-#rm -rf ${SYNCOVERY_BIN}
-
 # Change owner files and permissions
 chown -R root:root ${path_des}
 chmod -R a+rw ${SYNCOVERY_HOME}
-
