@@ -21,11 +21,4 @@ if [[ -n "${PID}" ]]; then
 	exit 0
 fi
 
-
-echo '##########################  ' $(date) '  ##########################' >> ${SYNCOVERY_HOME}/start.log
-
-busybox nohup ${SYNCOVERY_BIN} SET /INI=${SYNCOVERY_HOME}/Syncovery.cfg 2>&1 >>${SYNCOVERY_HOME}/start.log &
-
-sleep 5
-echo '##########################  ' $(date) '  ##########################' >> ${SYNCOVERY_HOME}/start.log
-
+busybox nohup ${SYNCOVERY_BIN} SET /INI=${SYNCOVERY_HOME}/Syncovery.cfg 2>&1 >${SYNCOVERY_HOME}/start.log &
