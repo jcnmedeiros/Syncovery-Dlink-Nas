@@ -22,3 +22,7 @@ if [[ -n "${PID}" ]]; then
 fi
 
 busybox nohup ${SYNCOVERY_BIN} SET /INI=${SYNCOVERY_HOME}/Syncovery.cfg 2>&1 >${SYNCOVERY_HOME}/start.log &
+
+# Enable swap
+SWP=$(cat /proc/swaps | grep "$path/.swapfile.swp")
+[ -z "$SWP" ] && swapon $path/.swapfile.swp;
