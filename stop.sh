@@ -22,3 +22,7 @@ sleep 10;
 
 PID=$(/bin/ps -eo 'pid,cmd' | grep 'SyncoveryCL' | grep -v grep | awk '{ print $1 }')
 [[ -n "${PID}" ]] && kill ${PID}
+
+# Disable swap
+SWP=$(cat /proc/swaps | grep "$path/.swapfile.swp")
+[ ! -z "$SWP" ] && swapoff $path/.swapfile.swp;

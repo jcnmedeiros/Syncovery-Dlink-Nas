@@ -61,3 +61,6 @@ ${SYNCOVERY_BIN} SET /INI=${SYNCOVERY_HOME}/Syncovery.cfg /WEBSERVER=localhost /
 # Change owner files and permissions
 chown -R root:root ${path_des}
 chmod -R a+rw ${SYNCOVERY_HOME}
+
+# Creates a 1GB swapfile
+[ ! -f $path_des/.swapfile.swp ] && { dd if=/dev/zero of=$path_des/.swapfile.swp bs=10M count=100 ; mkswap $path_des/.swapfile.swp; }
